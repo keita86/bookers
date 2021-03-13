@@ -8,7 +8,7 @@
     prohibited this book being saved:
   </h2>
   <ul>
-    <% @book.errors.full_message.each do |message| %>
+    <% @book.errors.full_messages.each do |message| %>
     <li>
       <%= message %>
     </li>

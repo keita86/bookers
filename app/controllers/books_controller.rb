@@ -23,7 +23,6 @@ class BooksController < ApplicationController
     end
   end
 
-
   def edit
     @book = Book.find(params[:id])
   end
@@ -34,7 +33,6 @@ class BooksController < ApplicationController
       flash[:notice] = "Book was successfully updated"
       redirect_to @book
     else
-      @book = Book.find(params[:id])
       render :edit
     end
   end
